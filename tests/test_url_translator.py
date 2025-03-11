@@ -23,7 +23,7 @@ def test_url_translator_success(show_url_translator):
             ('seasons' in result) or 
             ('url' in result and result['url'] != "" and 'sub' in result)
         ), "Each item must have 'seasons' or both non-empty 'url' and 'sub'"
-        time.sleep(2)
+        time.sleep(1)
 
 if __name__ == '__main__':
     pytest.main(['-v'])

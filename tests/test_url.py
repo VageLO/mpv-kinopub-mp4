@@ -29,7 +29,7 @@ def test_url_success(show_url):
             ('translators' in result) or 
             ('url' in result and result['url'] != "" and 'sub' in result)
         ), "Each item must have 'translators' or non-empty 'url' and 'sub'"
-        time.sleep(2)
+        time.sleep(1)
 
 if __name__ == '__main__':
     pytest.main(['-v'])
